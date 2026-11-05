@@ -1,0 +1,17 @@
+wir3d - avisos
+
+Todo el codigo de este proyecto (DSP, procesador e interfaz) es original: el detector YIN con
+refinamiento nativo, el shifter sincronizado al periodo, la preservacion de formantes por LPC con
+celosia, el cuantizador por mascara, el armonizador, el beat repeat, etc.
+
+Referencias de COMPORTAMIENTO (no de codigo): QPitch (https://github.com/Skynse/qpitch, GPL-3.0)
+sirvio como especificacion de funciones y criterios de prueba: notas permitidas por tecla,
+transicion/glide separada de la velocidad de retune, tolerancia en cents, humanize, retencion al
+perder el tono, medicion del tono real de salida y preservacion de formantes. No se copio codigo
+fuente de QPitch ni de Rubber Band, por lo que wir3d no hereda sus licencias.
+
+Si en el futuro se incorpora codigo de QPitch o Rubber Band (GPL), wir3d tendria que distribuirse
+tambien bajo GPL (v3 / v2 o posterior) con su codigo fuente completo.
+
+wir3d usa JUCE (https://juce.com), con su propia licencia (AGPLv3 / comercial): revisala si vas a
+distribuir el plugin.

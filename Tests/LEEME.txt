@@ -1,0 +1,9 @@
+Pruebas del DSP (no necesitan JUCE; solo un compilador C++17):
+
+  g++ -O2 -std=c++17 detector_test.cpp -o detector_test && ./detector_test
+  g++ -O2 -std=c++17 shifter_test.cpp  -o shifter_test  && ./shifter_test
+  g++ -O2 -std=c++17 formant_test.cpp  -o formant_test  && ./formant_test
+
+detector_test : error de tono <= 3 cents (18 casos, 3 frecuencias de muestreo, 55-880 Hz) y 180 casos aleatorios.
+shifter_test  : frecuencia de salida dentro de +-4 Hz (48 casos: 3 sr x 4 ratios x 4 tamanos de bloque).
+formant_test  : la celosia LPC reconstruye con -111 dB y los formantes se conservan al subir 4 semitonos.
